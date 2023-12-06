@@ -1,0 +1,143 @@
+body {
+    /*Tamaño del margen
+    margin: 0; /* Elimina el margen
+    padding: 0; /* Elimina el relleno */
+
+    /*color de fondo*/
+    background-color:#bd0a41;
+    /*estilo de letra*/
+    font-family: 'Poppins', sans-serif;
+    /*tamaño imagen*/
+    margin: 0 auto;
+    padding: 0;
+;
+}
+
+body h1{
+    text-align: center;
+    font-size: 80px;
+    margin: 1px;
+}
+
+body h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 1px;
+}
+
+section{
+    margin: 10px;
+    padding: 10px;
+    background-color:azure;
+}
+.contenido{
+    background-color:deeppink;
+}
+header{
+    text-align: center;
+    display: flex;
+    margin: 10px; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+}
+
+#izq{
+    flex: 1;
+    text-align: left;
+    font-size: 100px;
+}
+#der{
+    flex: 1;
+    text-align: right;
+    font-size: 100px;
+}
+nav {
+    background-color: black;
+    width: 99%;
+    height: 10%;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Añadido para que los elementos estén en una sola línea */
+    justify-content: center; /* Opcional: para centrar los elementos en el nav */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 40px; /* Espaciado entre elementos, ajusta según sea necesario */
+    padding: 1.5em 1.5em; /* Agregamos relleno para que sea más fácil hacer clic y ver el área afectada */
+
+    transition: background-color 0.3s; /* Agregamos una transición de color de fondo para que sea suave */
+}
+
+nav a:hover {
+    background-color: darkgrey; /* Cambia este color al que prefieras al pasar el puntero */
+    color: #ffffff; /* Cambiamos el color del texto al pasar el ratón */
+}
+
+
+section article p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+section {
+    display: flex;
+    background-color: #f2833a;
+    width: 99%;
+    height: 10%;
+    margin: 1px;
+    padding: 20px;
+}
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #fa3c08;
+}
+
+article{
+    flex: 1;
+    text-align: center;
+}
+
+aside{
+    background-color: #678d6c;
+    text-align: center;
+    flex: 0;
+    border-radius: 10px;
+}
+
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.logo{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logo:hover .logo-slide{
+    animation-play-state: paused;
+}
+
+.logo-slide{
+    display: inline-block;
+    animation: 5s slide infinite linear;
+
+}
+
+.logos-slide img{
+    margin: 0;
+    padding: 0;
+}
