@@ -1,45 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body {
+            /*Tamaño del margen
+            margin: 0; /* Elimina el margen
+            padding: 0; /* Elimina el relleno */
+
+            /*color de fondo*/
+            background-color:#bd0a41;
+            /*estilo de letra*/
+            font-family: 'Poppins', sans-serif;
+            /*tamaño imagen*/
+            margin: 0 auto;
+            padding: 0;
+        ;
+        }
+
+        body h1{
+            text-align: center;
+            font-size: 80px;
+            margin: 1px;
+        }
+
+        body h2{
+            text-align: center;
+            font-size: 40px;
+            margin: 1px;
+        }
+
+        section{
+            margin: 10px;
+            padding: 10px;
+            background-color:azure;
+        }
+        .contenido{
+            background-color:deeppink;
+        }
+        header{
+            text-align: center;
+            display: flex;
+            margin: 10px; /* Elimina el margen */
+            padding: 0; /* Elimina el relleno */
+        }
+
+        #izq{
+            flex: 1;
+            text-align: left;
+            font-size: 100px;
+        }
+        #der{
+            flex: 1;
+            text-align: right;
+            font-size: 100px;
+        }
+        nav {
+            background-color: black;
+            width: 99%;
+            height: 10%;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex; /* Añadido para que los elementos estén en una sola línea */
+            justify-content: center; /* Opcional: para centrar los elementos en el nav */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 40px; /* Espaciado entre elementos, ajusta según sea necesario */
+            padding: 1.5em 1.5em; /* Agregamos relleno para que sea más fácil hacer clic y ver el área afectada */
+
+            transition: background-color 0.3s; /* Agregamos una transición de color de fondo para que sea suave */
+        }
+
+        nav a:hover {
+            background-color: darkgrey; /* Cambia este color al que prefieras al pasar el puntero */
+            color: #ffffff; /* Cambiamos el color del texto al pasar el ratón */
+        }
+
+
+        section article p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 25px;
+        }
+
+        section {
+            display: flex;
+            background-color: #f2833a;
+            width: 99%;
+            height: 10%;
+            margin: 1px;
+            padding: 20px;
+        }
+        footer {
+            padding: 25px;
+            text-align: center;
+            background-color: #fa3c08;
+        }
+
+        article{
+            flex: 1;
+            text-align: center;
+        }
+
+        aside{
+            background-color: #678d6c;
+            text-align: center;
+            flex: 0;
+            border-radius: 10px;
+        }
+
+
+        @keyframes slide {
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+        .logo{
+            margin-top: 50px;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .logo:hover .logo-slide{
+            animation-play-state: paused;
+        }
+
+        .logo-slide{
+            display: inline-block;
+            animation: 5s slide infinite linear;
+
+        }
+
+        .logos-slide img{
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
     <meta charset="UTF-8">
     <title>Inka Wasi</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <h1>LICORERIA</h1>
 <header>
         <h1 id="izq">INKA</h1>
-        <img src="img/logo.png" width="20%">
+        <img src="../img/logo.png" width="20%">
         <h2 id="der">WASI</h2>
 </header>
 <h2>"Tu destino exclusivo para experiencias líquidas inolvidables."</h2>
 
 <nav>
     <ul>
-        <li><a href="index.html">INICIO</a></li>
-        <li><a href="html/nosotros.html">NOSOTROS</a></li>
-        <li><a href="html/sucursales.html">SUCURSALES</a></li>
-        <li><a href="html/catalogo.html">CATALOGO</a></li>
-        <li><a href="html/promociones.html">PROMOCIONES</a></li>
-        <li><a href="html/contactos.html">CONTACTO</a></li>
+        <li><a href="inicio.html">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="sucursales.html">SUCURSALES</a></li>
+        <li><a href="catalogo.html">CATALOGO</a></li>
+        <li><a href="promociones.html">PROMOCIONES</a></li>
+        <li><a href="contactos.html">CONTACTO</a></li>
     </ul>
 </nav>
 
 <div class="logo">
     <div class="logo-slide">
-        <img src="img/carrusel3.jpg">
-        <img src="img/carrusel2.jpg">
-        <img src="img/carrusel1.jpg">
+        <img src="../img/carrusel3.jpg">
+        <img src="../img/carrusel2.jpg">
+        <img src="../img/carrusel1.jpg">
     </div>
     <div class="logo-slide">
-        <img src="img/carrusel3.jpg">
-        <img src="img/carrusel2.jpg">
-        <img src="img/carrusel1.jpg">
+        <img src="../img/carrusel3.jpg">
+        <img src="../img/carrusel2.jpg">
+        <img src="../img/carrusel1.jpg">
     </div>
     <div class="logo-slide">
-        <img src="img/carrusel3.jpg">
-        <img src="img/carrusel2.jpg">
-        <img src="img/carrusel1.jpg">
+        <img src="../img/carrusel3.jpg">
+        <img src="../img/carrusel2.jpg">
+        <img src="../img/carrusel1.jpg">
     </div>
 </div>
 
@@ -48,7 +193,7 @@
         <h2>Bienvenidos a Inka Wasi</h2>
         <h2>La casa del indio</h2>
         <p>¡Bienvenido a Inka Wasi, tu destino premium para explorar el mundo de los sabores exquisitos! Sumérgete en la riqueza de nuestra selección de licores cuidadosamente elegidos y vive una experiencia única en cada sorbo.</p>
-        <img src="img/receta.png">
+        <img src="../img/receta.png">
         <p>&nbsp;</p>
         <p>&nbsp;</p>
     </article>
@@ -57,25 +202,24 @@
         <p>&nbsp;</p>
         <h2>Whisky</h2>
         <h3>Un elixir para todas ocasiones</h3>
-        <img src="img/whisky.png" style="width: 50%">
+        <img src="../img/whisky.png" style="width: 50%">
 
         <h2>Ron</h2>
         <h3>Unicamente para paladares exquisitos</h3>
-        <img src="img/ron.png" style="width: 50%">
+        <img src="../img/ron.png" style="width: 50%">
 
         <h2>Aguardiente</h2>
         <h3>Fuerte para los fuertes</h3>
-        <img src="img/aguardiente.png" style="width: 50%">
+        <img src="../img/aguardiente.png" style="width: 50%">
 
         <h2>Tequila</h2>
         <h3>Viva Mexico Carajo</h3>
-        <img src="img/tequila.png" style="width: 50%">
+        <img src="../img/tequila.png" style="width: 50%">
         <p>&nbsp;</p>
     </aside>
 </section>
 
 <footer>
-    <p>danny mmvg pelas el maso </p>
     <p>2023 Inka Wasi. Todos los derechos reservados.</p>
 </footer>
 </body>
