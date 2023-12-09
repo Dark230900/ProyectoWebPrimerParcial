@@ -7,8 +7,9 @@
             margin: 0; /* Elimina el margen
             padding: 0; /* Elimina el relleno */
 
-            /*color de fondo*/
-            background-color:#bd0a41;
+            background-image: url(../img/fondotinto.jpg);
+            background-size: cover;
+
             /*estilo de letra*/
             font-family: 'Poppins', sans-serif;
             /*tamaño imagen*/
@@ -45,11 +46,13 @@
         }
 
         #izq{
+            color: white;
             flex: 1;
             text-align: left;
             font-size: 100px;
         }
         #der{
+            color: white;
             flex: 1;
             text-align: right;
             font-size: 100px;
@@ -90,7 +93,8 @@
 
         section {
             display: flex;
-            background-color: #f2833a;
+            background-image: url(../img/fondoSection.jpg);
+            background-size: cover;
             width: 99%;
             height: 10%;
             margin: 1px;
@@ -99,19 +103,23 @@
         footer {
             padding: 25px;
             text-align: center;
-            background-color: #fa3c08;
+            background-image: url(../img/fondofooter.jpg);
+            background-size: cover;
         }
 
         article{
             flex: 1;
+            color: #ffffff;
             text-align: center;
         }
 
         aside{
-            background-color: #678d6c;
+            background-image: url(../img/asidefondo.jpg);
+            background-size: cover;
             text-align: center;
             flex: 0;
             border-radius: 10px;
+            padding: 10px;
         }
 
 
@@ -145,6 +153,9 @@
             margin: 0;
             padding: 0;
         }
+        body h1{
+            color: #ffffff;
+        }
 
     </style>
     <meta charset="UTF-8">
@@ -157,7 +168,7 @@
         <img src="../img/logo.png" width="20%">
         <h2 id="der">WASI</h2>
 </header>
-<h2>"Tu destino exclusivo para experiencias líquidas inolvidables."</h2>
+<h2 style="color: white">"Tu destino exclusivo para experiencias líquidas inolvidables."</h2>
 
 <nav>
     <ul>
