@@ -3,58 +3,58 @@
 <head>
     <style type="text/css">
         body {
-            /*Tamaño del margen
-            margin: 0; /* Elimina el margen
-            padding: 0; /* Elimina el relleno */
-
+            margin: 0;
+            padding: 0;
             background-image: url(../img/fondotinto.jpg);
             background-size: cover;
-
-            /*estilo de letra*/
             font-family: 'Poppins', sans-serif;
-            /*tamaño imagen*/
-            margin: 0 auto;
-            padding: 0;
         }
 
-        body h1{
+        body h1 {
             text-align: center;
             font-size: 80px;
             margin: 1px;
+            color: white;
         }
 
-        body h2{
+        body h2 {
             text-align: center;
             font-size: 40px;
             margin: 1px;
-        }
-        section{
-            margin: 10px;
-            padding: 10px;
-            background-color:azure;
-        }
-        .contenido{
-            background-color:deeppink;
-        }
-        header{
-            text-align: center;
-            display: flex;
-            margin: 10px; /* Elimina el margen */
-            padding: 0; /* Elimina el relleno */
+            color: white;
         }
 
-        #izq{
+        section {
+            margin: 10px;
+            padding: 10px;
+            background-color: azure;
+        }
+
+        .contenido {
+            background-color: deeppink;
+        }
+
+        header {
+            text-align: center;
+            display: flex;
+            margin: 10px;
+            padding: 0;
+        }
+
+        #izq {
             color: white;
             flex: 1;
             text-align: left;
             font-size: 100px;
         }
-        #der{
+
+        #der {
             color: white;
             flex: 1;
             text-align: right;
             font-size: 100px;
         }
+
         nav {
             background-color: black;
             width: 99%;
@@ -65,24 +65,68 @@
 
         nav ul {
             list-style: none;
-            display: flex; /* Añadido para que los elementos estén en una sola línea */
-            justify-content: center; /* Opcional: para centrar los elementos en el nav */
+            display: flex;
+            justify-content: center;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 40px; /* Espaciado entre elementos, ajusta según sea necesario */
-            padding: 1.5em 1.5em; /* Agregamos relleno para que sea más fácil hacer clic y ver el área afectada */
-
-            transition: background-color 0.3s; /* Agregamos una transición de color de fondo para que sea suave */
+            margin: 0 40px;
+            padding: 1.5em 1.5em;
+            transition: background-color 0.3s;
         }
 
         nav a:hover {
-            background-color: darkgrey; /* Cambia este color al que prefieras al pasar el puntero */
-            color: #ffffff; /* Cambiamos el color del texto al pasar el ratón */
+            background-color: darkgrey;
+            color: #ffffff;
         }
 
+        article#Productos {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        article#Productos h2 {
+            color: #333;
+        }
+
+        article#Productos ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        article#Productos li {
+            margin: 10px;
+            text-align: center;
+        }
+
+        article#Productos h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        article#Productos img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        article#Productos img:hover {
+            transform: scale(1.1);
+        }
+        footer{
+            text-align: center;
+            color: white;
+        }
     </style>
     <meta charset="UTF-8">
     <title>Catálogo</title>
@@ -94,17 +138,52 @@
         <img src="../img/logo.png" width="20%">
         <h2 id="der">WASI</h2>
     </header>
-    <h2 style="color: white">"Tu destino exclusivo para experiencias líquidas inolvidables."</h2>
-
-<nav>
-    <ul>
-        <li><a href="inicio.html">INICIO</a></li>
-        <li><a href="nosotros.html">NOSOTROS</a></li>
-        <li><a href="sucursales.html">SUCURSALES</a></li>
-        <li><a href="catalogo.html">CATALOGO</a></li>
-        <li><a href="promociones.html">PROMOCIONES</a></li>
-        <li><a href="contactos.html">CONTACTO</a></li>
-    </ul>
-</nav>
+    <h2>"Tu destino exclusivo para experiencias líquidas inolvidables."</h2>
+    <nav>
+        <ul>
+            <li><a href="inicio.html">INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="sucursales.html">SUCURSALES</a></li>
+            <li><a href="catalogo.html">CATALOGO</a></li>
+            <li><a href="promociones.html">PROMOCIONES</a></li>
+            <li><a href="contactos.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <article id="Productos">
+        <h2>Productos</h2>
+        <ul>
+            <li>
+                <h1>Whisky</h1>
+                <img src="../img/whisky1.jpg">
+                <img src="../img/whisky2.jpg">
+                <img src="../img/whiky3.png">
+                <img src="../img/whisky4.jpg">
+            </li>
+            <li>
+                <h1>Ron</h1>
+                <img src="../img/ron1.webp">
+                <img src="../img/ron2.jpg">
+                <img src="../img/ron3.jpg">
+                <img src="../img/ron4.jpg">
+            </li>
+            <li>
+                <h1>Tequila</h1>
+                <img src="../img/tequila1.jpg">
+                <img src="../img/tequila2.jpg">
+                <img src="../img/tequila3.jpg">
+                <img src="../img/tequila4.jpg">
+            </li>
+            <li>
+                <h1>Hiervas</h1>
+                <img src="../img/hiervas4.jpg">
+                <img src="../img/hiervas1.jpg">
+                <img src="../img/hiervas2.jpg">
+                <img src="../img/hiervas3.jpg">
+            </li>
+        </ul>
+    </article>
+    <footer>
+        <p>&copy; 2023 Inka Wasi. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
