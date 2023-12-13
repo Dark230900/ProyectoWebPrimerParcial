@@ -3,16 +3,11 @@
 <head>
     <style type="text/css">
         body {
-            /*Tamaño del margen
-            margin: 0; /* Elimina el margen
-            padding: 0; /* Elimina el relleno */
-
+            margin: 0;
+            padding: 0;
             background-image: url(../img/fondotinto.jpg);
             background-size: cover;
-
-            /*estilo de letra*/
             font-family: 'Poppins', sans-serif;
-            /*tamaño imagen*/
             margin: 0 auto;
             padding: 0;
         }
@@ -21,26 +16,33 @@
             text-align: center;
             font-size: 80px;
             margin: 1px;
+            color: white;
         }
 
         body h2{
             text-align: center;
             font-size: 40px;
             margin: 1px;
+            color: white;
         }
         section{
-            margin: 10px;
-            padding: 10px;
-            background-color:azure;
+            margin: 20px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centra el contenido */
         }
-        .contenido{
-            background-color:deeppink;
+        section img {
+            max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+            height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+            margin-top: 20px; /* Espaciado superior de la imagen */
         }
         header{
             text-align: center;
             display: flex;
-            margin: 10px; /* Elimina el margen */
-            padding: 0; /* Elimina el relleno */
+            margin: 10px;
+            padding: 0;
         }
 
         #izq{
@@ -65,31 +67,33 @@
 
         nav ul {
             list-style: none;
-            display: flex; /* Añadido para que los elementos estén en una sola línea */
-            justify-content: center; /* Opcional: para centrar los elementos en el nav */
+            display: flex;
+            justify-content: center;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 40px; /* Espaciado entre elementos, ajusta según sea necesario */
-            padding: 1.5em 1.5em; /* Agregamos relleno para que sea más fácil hacer clic y ver el área afectada */
-
-            transition: background-color 0.3s; /* Agregamos una transición de color de fondo para que sea suave */
+            margin: 0 40px;
+            padding: 1.5em 1.5em;
+            transition: background-color 0.3s;
         }
 
         nav a:hover {
-            background-color: darkgrey; /* Cambia este color al que prefieras al pasar el puntero */
-            color: #ffffff; /* Cambiamos el color del texto al pasar el ratón */
+            background-color: darkgrey;
+            color: #ffffff;
         }
         footer{
             text-align: center;
             color: white;
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            padding-top: 10px;
         }
-
     </style>
     <meta charset="UTF-8">
-    <title>Catálogo</title>
+    <title>Sucursales</title>
 </head>
 <body>
     <h1>LICORERIA</h1>
@@ -98,20 +102,36 @@
         <img src="../img/logo.png" width="20%">
         <h2 id="der">WASI</h2>
     </header>
-    <h2 style="color: white">"Tu destino exclusivo para experiencias líquidas inolvidables."</h2>
+    <h2>"Tu destino exclusivo para experiencias líquidas inolvidables."</h2>
 
-<nav>
-    <ul>
-        <li><a href="inicio.html">INICIO</a></li>
-        <li><a href="nosotros.html">NOSOTROS</a></li>
-        <li><a href="sucursales.html">SUCURSALES</a></li>
-        <li><a href="catalogo.html">CATALOGO</a></li>
-        <li><a href="promociones.html">PROMOCIONES</a></li>
-        <li><a href="contactos.html">CONTACTO</a></li>
-    </ul>
-</nav>
-<footer>
-    <p>2023 Inka Wasi. Todos los derechos reservados.</p>
-</footer>
+    <nav>
+        <ul>
+            <li><a href="inicio.html">INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="sucursales.html">SUCURSALES</a></li>
+            <li><a href="catalogo.html">CATALOGO</a></li>
+            <li><a href="promociones.html">PROMOCIONES</a></li>
+            <li><a href="contactos.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 style="color: #333; text-align: center;">Sucursales</h2>
+        <p style="color: #333; text-align: justify; font-size: 18px; line-height: 1.6;">
+            Tenemos el placer de ofrecerte nuestras sucursales en Quito, Ecuador. Descubre la variedad de licores exclusivos que ofrecemos en cada ubicación:
+        </p>
+        
+        <ul style="color: #333; text-align: left; font-size: 18px;">
+            <li>Sucursal Principal: Paute y Sangay, Chimbacalle, Quito.</li>
+            <li>Sucursal Norte: Av. Atahualpa y Nuñes de Vela , La Carolina, Quito</li>
+            <li>Sucursal Sur: Oe11e e Isabel Herreria, Eltransito, Quito</li>
+        </ul>
+        
+        <img src="../img/sucursales.png" alt="Mapa de Sucursales" />
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Inka Wasi. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
