@@ -3,58 +3,77 @@
 <head>
     <style type="text/css">
         body {
-            /*Tamaño del margen
-            margin: 0; /* Elimina el margen
-            padding: 0; /* Elimina el relleno */
-
+            margin: 0;
+            padding: 0;
             background-image: url(../img/fondotinto.jpg);
             background-size: cover;
-
-            /*estilo de letra*/
             font-family: 'Poppins', sans-serif;
-            /*tamaño imagen*/
             margin: 0 auto;
+            padding: 0;
+            color: white;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin: 1px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 40px;
+        }
+
+        .combos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .combos-container img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            width: 100%;
+            height: 50px;
+            padding-top: 10px;
+        }
+
+        header {
+            text-align: center;
+            display: flex;
+            margin: 10px;
             padding: 0;
         }
 
-        body h1{
-            text-align: center;
-            font-size: 80px;
-            margin: 1px;
-        }
-
-        body h2{
-            text-align: center;
-            font-size: 40px;
-            margin: 1px;
-        }
-        section{
-            margin: 10px;
-            padding: 10px;
-            background-color:azure;
-        }
-        .contenido{
-            background-color:deeppink;
-        }
-        header{
-            text-align: center;
-            display: flex;
-            margin: 10px; /* Elimina el margen */
-            padding: 0; /* Elimina el relleno */
-        }
-
-        #izq{
+        #izq {
             color: white;
             flex: 1;
             text-align: left;
             font-size: 100px;
         }
-        #der{
+
+        #der {
             color: white;
             flex: 1;
             text-align: right;
             font-size: 100px;
         }
+
         nav {
             background-color: black;
             width: 99%;
@@ -65,32 +84,22 @@
 
         nav ul {
             list-style: none;
-            display: flex; /* Añadido para que los elementos estén en una sola línea */
-            justify-content: center; /* Opcional: para centrar los elementos en el nav */
+            display: flex;
+            justify-content: center;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 40px; /* Espaciado entre elementos, ajusta según sea necesario */
-            padding: 1.5em 1.5em; /* Agregamos relleno para que sea más fácil hacer clic y ver el área afectada */
-
-            transition: background-color 0.3s; /* Agregamos una transición de color de fondo para que sea suave */
+            margin: 0 40px;
+            padding: 1.5em 1.5em;
+            transition: background-color 0.3s;
         }
 
         nav a:hover {
-            background-color: darkgrey; /* Cambia este color al que prefieras al pasar el puntero */
-            color: #ffffff; /* Cambiamos el color del texto al pasar el ratón */
+            background-color: darkgrey;
+            color: #ffffff;
         }
-        footer{
-            text-align: center;
-            color: white;
-            width: 100%;
-            height: 50px;
-
-            padding-top: 10px;
-        }
-
     </style>
     <meta charset="UTF-8">
     <title>Promociones</title>
@@ -102,19 +111,41 @@
         <img src="../img/logo.png" width="20%">
         <h2 id="der">WASI</h2>
     </header>
-    <h2 style="color: white">"Tu destino exclusivo para experiencias líquidas inolvidables."</h2>
+    <h2>"Tu destino exclusivo para experiencias líquidas inolvidables."</h2>
 
-<nav>
-    <ul>
-        <li><a href="inicio.html">INICIO</a></li>
-        <li><a href="nosotros.html">NOSOTROS</a></li>
-        <li><a href="sucursales.html">SUCURSALES</a></li>
-        <li><a href="catalogo.html">CATALOGO</a></li>
-        <li><a href="promociones.html">PROMOCIONES</a></li>
-        <li><a href="contactos.html">CONTACTO</a></li>
-    </ul>
-</nav>
-<footer>
+    <nav>
+        <ul>
+            <li><a href="inicio.html">INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="sucursales.html">SUCURSALES</a></li>
+            <li><a href="catalogo.html">CATALOGO</a></li>
+            <li><a href="promociones.html">PROMOCIONES</a></li>
+            <li><a href="contactos.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Combos</h2>
+        <div class="combos-container">
+            <img src="../img/combos1.png">
+            <img src="../img/combos2.png">
+            <img src="../img/combos3.png">
+            <img src="../img/combos4.png">
+            <img src="../img/combos5.png">
+            <img src="../img/combos6.png">
+            <img src="../img/combos7.png">
+            <img src="../img/combos8.png">
+            <img src="../img/combos9.png">
+            <img src="../img/combos10.png">
+            <img src="../img/combos11.png">
+            <img src="../img/combos12.png">
+            <img src="../img/combos13.png">
+            <img src="../img/combos14.png">
+            <img src="../img/combos15.png">
+        </div>
+    </section>
+
+    <footer>
         <p>&copy; 2023 Inka Wasi. Todos los derechos reservados.</p>
     </footer>
 </body>
