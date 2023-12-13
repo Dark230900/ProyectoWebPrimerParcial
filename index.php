@@ -6,8 +6,8 @@
     <style>
         body {
             background-image: url(img/fondoLogin2.jpeg);
-            background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-size: cover;
+            background-repeat: no-repeat;
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
@@ -22,8 +22,8 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            width: 600px; /* Ajusta el ancho según tus necesidades */
-            height: 400px; /* Ajusta la altura según tus necesidades */
+            width: 600px;
+            height: 400px;
             text-align: center;
         }
 
