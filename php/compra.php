@@ -106,7 +106,7 @@
         <li><a href="../html/sucursales.html">SUCURSALES</a></li>
         <li><a href="../html/catalogo.html">CATALOGO</a></li>
         <li><a href="../html/promociones.html">PROMOCIONES</a></li>
-        <li><a href="../html/contactos.html">CONTACTO</a></li>
+        <li><a href="../html/compras.html">COMPRAS</a></li>
     </ul>
 </nav>
 <br>
@@ -123,7 +123,41 @@
             $telefono = $_POST["telefono"];
             $correo = $_POST["correo"];
             $metodo_pago = $_POST["metodo_pago"];
-            $producto = $_POST["producto"];
+            $productos = isset($_POST["productos"]) ? $_POST["productos"] : array();
+
+            // Definir un array asociativo para traducir los valores a nombres
+            $productos_nombres = array(
+                "blue_label" => "Blue Label - Johnnie Walker",
+                "grey_goose" => "Grey Goose Vodka",
+                "patron_silver" => "Patrón Silver Tequila",
+                "moet_chandon" => "Moët & Chandon Champagne",
+                "hendricks" => "Hendrick's Gin",
+                "jameson" => "Jameson Irish Whiskey",
+                "baileys" => "Baileys Irish Cream",
+                "don_julio" => "Don Julio Blanco Tequila",
+                "chivas_regal" => "Chivas Regal Scotch Whisky",
+                "absolut" => "Absolut Vodka",
+                "Promocion1" => "Promocion 1",
+                "Promocion2" => "Promocion 2",
+                "Promocion3" => "Promocion 3",
+                "Promocion4" => "Promocion 4",
+                "Promocion5" => "Promocion 5",
+                "Promocion6" => "Promocion 6",
+                "Promocion7" => "Promocion 7",
+                "Promocion8" => "Promocion 8",
+                "Promocion9" => "Promocion 9",
+                "Promocion10" => "Promocion 10",
+                "Promocion11" => "Promocion 11",
+                "Promocion12" => "Promocion 12",
+                "Promocion13" => "Promocion 13",
+                "Promocion14" => "Promocion 14",
+                "Promocion15" => "Promocion 15"
+            );
+
+            // Traducir los valores seleccionados a nombres
+            $productos_seleccionados = array_map(function ($producto) use ($productos_nombres) {
+                return $productos_nombres[$producto];
+            }, $productos);
 
             echo "<h2 style='text-align: center; color: #333;'>Resumen de la Compra</h2>";
             echo "<ul style='list-style: none; padding: 0;'>";
@@ -134,10 +168,11 @@
             echo "<li><strong>Número de Teléfono:</strong> $telefono</li>";
             echo "<li><strong>Correo Electrónico:</strong> $correo</li>";
             echo "<li><strong>Método de Pago:</strong> $metodo_pago</li>";
-            echo "<li><strong>Producto:</strong> $producto</li>";
+            echo "<li><strong>Productos:</strong> " . implode(",<br>", $productos_seleccionados) . "</li>";
             echo "</ul>";
         }
         ?>
+
     </div>
 </section>
 

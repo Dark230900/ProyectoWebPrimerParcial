@@ -147,7 +147,7 @@
         <li><a href="sucursales.html">SUCURSALES</a></li>
         <li><a href="catalogo.html">CATALOGO</a></li>
         <li><a href="promociones.html">PROMOCIONES</a></li>
-        <li><a href="contactos.html">CONTACTO</a></li>
+        <li><a href="compras.html">COMPRAS</a></li>
     </ul>
 </nav>
 
@@ -155,30 +155,31 @@
         <form action="../php/compra.php" method="post">
             <h2>Formulario para comprar</h2><br>
             <label for="nombres">Nombres:</label>
-            <input type="text" id="nombres" name="nombres" required>
+            <input type="text" id="nombres" name="nombres" required pattern="[a-zA-Z]+\s[a-zA-Z]+" title="Ingrese dos palabras separadas por espacio" placeholder="Ejm: Danny Sebastian">
 
             <label for="apellidos">Apellidos:</label>
-            <input type="text" id="apellidos" name="apellidos" required>
+            <input type="text" id="apellidos" name="apellidos" required pattern="[a-zA-Z]+\s[a-zA-Z]+" title="Ingrese dos palabras separadas por espacio" placeholder="Ejm: Quingaluisa Quispe">
 
             <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required max="2005-01-01">
 
             <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion" required>
+            <input type="text" id="direccion" name="direccion" required placeholder="Ejm: Paute s7-295 y Sangay">
 
             <label for="telefono">Número de Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
+            <input type="text" id="telefono" name="telefono" required pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" placeholder="Ejm: 0995064852">
 
             <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
+            <input type="email" id="correo" name="correo" required pattern="[^\s]+@[^\s]+\.[a-zA-Z]{2,}" title="Ingrese una dirección de correo electrónico válida" placeholder="Ejm: dsquingaluisa1@espe.edu.ec">
 
             <label>Método de Pago:</label>
             <label for="efectivo">Efectivo</label>
             <input type="radio" id="efectivo" name="metodo_pago" value="efectivo" required>
             <label for="tarjeta">Tarjeta</label>
             <input type="radio" id="tarjeta" name="metodo_pago" value="tarjeta" required>
-            <label for="producto">Producto:</label>
-            <select id="producto" name="producto" required>
+
+            <label for="productos">Productos:</label>
+            <select id="productos" name="productos[]" multiple required>
                 <option value="blue_label">Blue Label - Johnnie Walker</option>
                 <option value="grey_goose">Grey Goose Vodka</option>
                 <option value="patron_silver">Patrón Silver Tequila</option>
@@ -189,7 +190,23 @@
                 <option value="don_julio">Don Julio Blanco Tequila</option>
                 <option value="chivas_regal">Chivas Regal Scotch Whisky</option>
                 <option value="absolut">Absolut Vodka</option>
+                <option value="Promocion1">Promocion 1</option>
+                <option value="Promocion2">Promocion 2</option>
+                <option value="Promocion3">Promocion 3</option>
+                <option value="Promocion4">Promocion 4</option>
+                <option value="Promocion5">Promocion 5</option>
+                <option value="Promocion6">Promocion 6</option>
+                <option value="Promocion7">Promocion 7</option>
+                <option value="Promocion8">Promocion 8</option>
+                <option value="Promocion9">Promocion 9</option>
+                <option value="Promocion10">Promocion 10</option>
+                <option value="Promocion11">Promocion 11</option>
+                <option value="Promocion12">Promocion 12</option>
+                <option value="Promocion13">Promocion 13</option>
+                <option value="Promocion14">Promocion 14</option>
+                <option value="Promocion15">Promocion 15</option>
             </select>
+
 
             <input type="submit" value="Enviar">
         </form>

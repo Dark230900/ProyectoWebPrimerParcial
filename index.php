@@ -67,18 +67,22 @@
     <label for="password">Contraseña:</label>
     <input type="password" name="password" required>
     <?php
+    // Definir usuarios y contraseñas en un array asociativo
+    $usuarios = array(
+        "admin" => "admin",
+        "Carlos" => "Carlos",
+        "Danny" => "Danny"
+        // Agrega más usuarios según sea necesario
+    );
+
     // Verificar si se ha enviado el formulario
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Definir valores quemados
-        $usuarioQuemado = "admin";
-        $contrasenaQuemada = "admin";
-
         // Obtener valores del formulario
         $usuarioIngresado = $_POST["username"];
         $contrasenaIngresada = $_POST["password"];
 
-        // Verificar si los valores coinciden con los quemados
-        if ($usuarioIngresado == $usuarioQuemado && $contrasenaIngresada == $contrasenaQuemada) {
+        // Verificar si el usuario existe y la contraseña es correcta
+        if (array_key_exists($usuarioIngresado, $usuarios) && $usuarios[$usuarioIngresado] == $contrasenaIngresada) {
             // Redirigir a dashboard.php
             header("Location: html/inicio.html");
             exit();
@@ -88,6 +92,7 @@
         }
     }
     ?>
+
 
     <input type="submit" value="Iniciar sesión">
 </form>
